@@ -249,22 +249,6 @@ The paper trains all models under the same protocol:
 
 ---
 
-## Reported Results
-
-Accuracy and efficiency reported in the paper at epoch 300:
-
-| Model | Test `L2` | Test `T` | Test `S` | Test `U` | Time / epoch |
-|---|---:|---:|---:|---:|---:|
-| FNO | 0.0155 | 0.0071 | 0.0236 | 0.0158 | 38.24 s |
-| UFNO | 0.0129 | 0.0060 | 0.0202 | 0.0125 | 207.64 s |
-| MWT | 0.0124 | 0.0082 | 0.0170 | 0.0121 | 75.1 s |
-| **SAMNO** | **0.01056** | **0.00655** | **0.0148** | **0.0103** | **70.2 s** |
-| UNet | 0.0180 | 0.0089 | 0.0278 | 0.0173 | 69.45 s |
-
-Compared with the MWT baseline, SAMNO reduces the overall relative `L2` error by **14.8%**. Compared with FNO, it reduces the overall error by **31.9%**.
-
----
-
 ## Notes on Reproducibility
 
 - The uploaded `samno.py` is the model definition and quick-test implementation.
